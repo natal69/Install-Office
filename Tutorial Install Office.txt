@@ -1,0 +1,23 @@
+## TUTORIAL INSTALL OFFICE DI LAPTOP ##
+
+## INSTALL KONFIGURASI ##
+1. Pastikan laptop terhubung dengan internet.
+2. Buka browser dan cari "https://config.office.com/deploymentsettings"
+3. Pilih architecture yang sesuai dengan laptop Anda (32/64 bit).
+4. Pilih Office Suites sesuai dengan kebutuhan Anda.
+5. Langsung ke bagian Apps, pilih aplikasi yang Anda butuhkan.
+6. Di bagian Language, pilih primary language ke Bahasa Ingrris (United State).
+7. Klik "Ekspor"
+8. Di bagian ekspor, pilih "Office Open XML Formats", lalu klik "OK"
+
+## INSTALL DEPLOYMENT ##
+1. Buka browser, lalu cari "https://www.microsoft.com/en-us/download/details.aspx?id=49117&msockid=2502c8e752646ef61180dff953966f39" dan klik tombol "DOWNLOAD"
+2. Di "Disk C" buat folder baru dengan nama "Install Office" (sesuaikan dengan preferensi Anda).
+3. Cari 2 file yang sudah di download tadi, dan copy ke folder yang baru kita buat.
+3. Di folder yang baru, jalankan aplikasi "officedeploymenttool" dan ikuti semua petunjuk installnya.
+4. Akan muncul file baru yaitu "configuration-Office365-x64" dan file "setup".
+5. Buka CMD dan "Run Sebagai Administrator".
+6. Masuk ke path folder yang baru kita buat dengan cara ketik "cd C:\Install Office" dan klik "Enter"
+7. Ketik "setup.exe /download configuration.xml" dan "Enter" kemudian tunggu hingga selesai download.
+8. Setelah download selesai, ketik "setup.exe /configure configuration.xml" dan klik "Enter", lalu tunggu loading nya.
+9. Selamat!!!! Office Anda sudah terinstall.
