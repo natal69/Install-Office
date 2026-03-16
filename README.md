@@ -1,32 +1,62 @@
-# 📦 Microsoft Office Installation Tutorial (ODT Method)
+📦 Panduan Instalasi Microsoft Office (Metode ODT)
 
-Repositori ini berisi panduan langkah-langkah instalasi Microsoft Office menggunakan **Office Deployment Tool (ODT)**. [cite_start]Metode ini memungkinkan instalasi yang lebih bersih dan kustomisasi aplikasi yang ingin dipasang saja[cite: 1].
+Dokumen ini berisi panduan lengkap untuk melakukan instalasi Microsoft Office menggunakan Office Deployment Tool (ODT). Metode ini lebih efisien karena memungkinkan Anda memilih aplikasi tertentu saja yang ingin diinstal.
 
-## 📋 Persyaratan
-- [cite_start]Koneksi internet yang stabil[cite: 1].
-- [cite_start]Hak akses Administrator pada perangkat[cite: 1].
+📋 Prasyarat
 
-## 🚀 Langkah-Langkah Instalasi
+Koneksi internet yang stabil.
 
-### 1. Konfigurasi Online
-1. [cite_start]Buka browser dan kunjungi [Office Customization Tool](https://config.office.com/deploymentsettings)[cite: 1].
-2. [cite_start]Pilih **Architecture** yang sesuai (32-bit atau 64-bit)[cite: 1].
-3. [cite_start]Pilih **Office Suites** dan aplikasi spesifik yang dibutuhkan (Word, Excel, dll)[cite: 1].
-4. [cite_start]Atur **Primary Language** ke **English (United States)**[cite: 1].
-5. [cite_start]Klik **Export**, pilih **Office Open XML Formats**, lalu klik **OK** untuk mengunduh file `configuration.xml`[cite: 1].
+Hak akses Administrator pada laptop/PC.
 
-### 2. Persiapan Deployment
-1. [cite_start]Unduh **Office Deployment Tool** melalui [link resmi Microsoft ini](https://www.microsoft.com/en-us/download/details.aspx?id=49117)[cite: 1].
-2. [cite_start]Buat folder baru di **Disk C** dengan nama `Install Office`[cite: 1].
-3. [cite_start]Masukkan file `configuration.xml` dan file installer ODT yang sudah diunduh ke dalam folder tersebut[cite: 1].
-4. [cite_start]Jalankan `officedeploymenttool.exe` dan ekstrak isinya ke folder yang sama[cite: 1].
+🛠️ Langkah-Langkah Instalasi
 
-### 3. Eksekusi melalui Command Prompt (CMD)
-1. [cite_start]Buka **CMD** dan pilih **Run as Administrator**[cite: 1].
-2. Masuk ke direktori folder dengan mengetik:
-   ```bash
-   cd C:\Install Office
-   [cite_start]
-http://googleusercontent.com/immersive_entry_chip/0
-http://googleusercontent.com/immersive_entry_chip/1
-http://googleusercontent.com/immersive_entry_chip/2
+1. Konfigurasi Online
+
+Buka browser dan akses Office Customization Tool.
+
+Pilih Architecture yang sesuai (32-bit atau 64-bit).
+
+Pada bagian Office Suites, pilih paket Office sesuai kebutuhan.
+
+Di bagian Apps, pilih aplikasi yang ingin diinstal (contoh: Word, Excel, PowerPoint).
+
+Pada bagian Language, pilih bahasa utama: English (United States).
+
+Klik Ekspor, pilih Office Open XML Formats, lalu klik OK untuk mengunduh file configuration.xml.
+
+2. Persiapan Deployment
+
+Unduh Office Deployment Tool dari Situs Resmi Microsoft.
+
+Buat folder baru di Disk C dengan nama Install Office.
+
+Masukkan file configuration.xml dan file installer ODT yang sudah diunduh ke dalam folder tersebut.
+
+Jalankan officedeploymenttool.exe dan ekstrak isinya ke folder yang sama.
+
+3. Eksekusi via Command Prompt (CMD)
+
+Buka CMD dengan opsi Run as Administrator.
+
+Masuk ke folder instalasi dengan perintah:
+
+cd C:\Install Office
+
+
+Jalankan perintah untuk mengunduh file instalasi:
+
+setup.exe /download configuration.xml
+
+
+Tunggu hingga proses download selesai (kursor akan kembali muncul).
+
+Jalankan perintah untuk memulai instalasi:
+
+setup.exe /configure configuration.xml
+
+
+🏁 Selesai
+
+Tunggu hingga proses loading selesai. Jika sudah muncul notifikasi berhasil, Microsoft Office Anda sudah siap digunakan!
+
+Dibuat oleh: Natal Zega
